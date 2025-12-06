@@ -1,25 +1,21 @@
-import { createRouter, createWebHistory } from "vue-router";
-
-// Cambia @/views/ por @/components/ y corrige el nombre
-import LoginApp from "@/components/LoginApp.vue";
-import InstucionalApp from "@/components/InstucionalApp.vue"; // Sin la 'i' después de 'Inst'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: "/",
-    name: "Home",
-    component: InstucionalApp,
+    path: '/',
+    name: 'Home',
+    component: () => import('@/pages/index.vue')
   },
   {
-    path: "/login",
-    name: "Login",
-    component: LoginApp,
-  },
-];
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: () => import('@/pages/dashboard.vue')
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router

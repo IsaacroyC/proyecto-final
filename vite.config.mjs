@@ -3,7 +3,7 @@ import Components from 'unplugin-vue-components/vite'
 import Vue from '@vitejs/plugin-vue'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import Fonts from 'unplugin-fonts/vite'
-import VueRouter from 'unplugin-vue-router/vite'
+// import VueRouter from 'unplugin-vue-router/vite' // ← COMENTADA
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -11,15 +11,12 @@ import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   plugins: [
-    VueRouter(),
+    // VueRouter(), // ← COMENTADA
     Vue({
       template: { transformAssetUrls },
     }),
     Vuetify({
       autoImport: true,
-      styles: {
-        configFile: 'src/styles/settings.scss',
-      },
     }),
     Components(),
     Fonts({
@@ -39,9 +36,6 @@ export default defineConfig({
     exclude: [
       'vuetify',
       'vue-router',
-      'unplugin-vue-router/runtime',
-      'unplugin-vue-router/data-loaders',
-      'unplugin-vue-router/data-loaders/basic',
     ],
   },
 
