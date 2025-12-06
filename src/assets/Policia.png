@@ -1,0 +1,5 @@
+<template>
+  <div>
+    <img src="https://www.bing.com/images/search?view=detailV2&ccid=TAtWe6BT&id=63CEAE325BE12722F813026FBBA98432B6C2C3C2&thid=OIP.TAtWe6BTUFjOHyIHvhDTGgAAAA&mediaurl=https%3a%2f%2flookaside.fbsbx.com%2flookaside%2fcrawler%2fmedia%2f%3fmedia_id%3d263260690396184&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.4c0b567ba0535058ce1f2207be10d31a%3frik%3dwsPCtjKEqbtvAg%26pid%3dImgRaw%26r%3d0&exph=214&expw=213&q=colegio+nuestra+se%c3%b1ora+de+f%c3%a1tima+monter%c3%ada&FORM=IRPRST&ck=299B072D8547CD1EFAFE460A38F2920B&selectedIndex=24&itb=0" alt="Policia Nacional">
+  </div>
+</template>
